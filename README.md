@@ -11,4 +11,4 @@ User :
 - enrolledMonth: Number,
 
 ## ER Diagram
-![ER Diagram](./ER.png)#
+![ER Diagram](./ER.png)
