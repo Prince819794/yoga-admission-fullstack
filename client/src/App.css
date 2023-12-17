@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@400;600;900&family=Poppins:wght@300&family=Roboto+Mono&family=Splash&family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', serif;
+  font-size: 18px;
+}
+
+:root {
+  --bg1: rgba(250, 248, 241, 0.95);
+  --bg2: rgba(130, 234, 255, 0.9);
+  --card: #faeab151;
+  --primary-1: #FAF8F1;
+  --primary-2: #FAEAB1;
+  --primary-3: #E5BA73;
+  --primary-4: #C58940;
+}
+
+.app {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(circle at top, var(--bg1), var(--bg2)), url('/public/bg.png') no-repeat center center/ cover;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 2px dashed var(--primary-4);
+  background: var(--card);
+  backdrop-filter: blur(0.3rem);
+}
+
+label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input,
+select,
+button {
+  padding: 0.3rem 1rem;
+  border: 1.5px dashed var(--primary-4);
+  border-radius: 0.5rem;
+  background: var(--card);
+  outline: none;
+  cursor: pointer;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: radial-gradient(circle at top, var(--bg1), var(--bg2));
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px dashed;
+  border-color: var(--primary-4) transparent var(--primary-4) transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:769px) {
+  * {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
