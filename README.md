@@ -1,26 +1,31 @@
-# Yoga Classes Admission Form
+# Admission Form for Yoga Classes
 
-## Tech Stack
+## ER Diagram
+![ER Diagram](./ERD.png)
+## `Important Links`
+
+- [Hosted-Frontend](https://yoga-admission-princhi.netlify.app/)
+- [Hosted-Backend](https://yoga-app-backend.onrender.com)
+
+## `Tech Stack`
 
 - React Js
 - Node Js
 - Express Js
 - MongoDB
 
-## Hosted Links
+## `Hosting Plateforms Used`
 
-- [Frontend-Yoga-App](https://yoga-admission-form.netlify.app/)
-- [Backend-Yoga-App](https://yoga-backend-0wzl.onrender.com/)
+- `Netlify` for frontend
+- `Render` for backend
 
-## Schema
+## `Schema Used`
 
 User : 
-- _id: String,
-- name: String,
-- age: Number,
-- selectedBatch: String,
-- paymentStatus: Boolean,
-- enrolledMonth: Number,
+- `_id`: type : String,
+- `name`: type : String,
+- `age`: type : Number,
+- `selectedBatch`: type : String,
+- `paymentStatus`: type : Boolean,
+- `enrolledMonth`: type : Number,
 
-## ER Diagram
-![ER Diagram](./ER.png)
